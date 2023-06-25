@@ -23,7 +23,7 @@ To use this script, follow these steps:
 
 4. Extract the zip file and place the LUA script in the script directory mentioned in step 1.
 
-5. Make it executable: `chmod +x ~/.config/mpv/scripts/mpv-sub_not_forced_not_sdh.lua`
+5. Make it executable (for Linux users): `chmod +x ~/.config/mpv/scripts/mpv-sub_not_forced_not_sdh.lua`
 
 6. Restart MPV or reload the scripts by pressing Shift + R while the player is running.
 
