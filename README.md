@@ -21,7 +21,7 @@ To use this script, follow these steps:
 
 [Download :inbox_tray:](https://github.com/pzim-devdata/mpv-scripts/releases/latest/download/mpv-scripts.zip)
 
-4. Place the downloaded file in the script directory mentioned in step 1.
+4. Extract the zip file and place the LUA script in the script directory mentioned in step 1.
 
 5. Make it executable: `chmod +x ~/.config/mpv/scripts/mpv-sub_not_forced_not_sdh.lua`
 
