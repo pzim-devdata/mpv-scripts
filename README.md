@@ -23,9 +23,13 @@ To use this script, follow these steps:
 
 6. You can modify the script to play a specific langage.
 For example, if you want the script to play English subtitles but exclude the FORCED and SDH ones, you can make the following modification to line #4:
+
 `if sub.type == "sub" and not sub.forced and (sub.title == nil or not sub.title:find("SDH")) then`
+
 Replace it with:
+
 `if sub.type == "sub" and sub.lang:find("en") and not sub.forced and (sub.title == nil or not sub.title:find("SDH")) then`
+
 By adding the additional condition sub.lang:find("en"), you are checking if the subtitle language matches "en" (for English). This modification ensures that only English subtitles that are not FORCED and do not contain "SDH" in their title will be selected.
 
 Please make sure to understand the consequences of this modification and adjust it according to your specific needs.
