@@ -3,6 +3,10 @@ This is a LUA script for MPV that automatically prevents the selection of FORCED
 - Forced subtitles are subtitles that are displayed only for sections of the video that contain non-dialogue elements such as signs, captions, or foreign language translations.
 - SDH means Subtitles for the Deaf or Hard of Hearing.
 
+
+[![GitHub license](https://img.shields.io/github/license/pzim-devdata/mpv-scripts?style=plastic)](https://github.com/pzim-devdata/mpv-scripts/blob/main/LICENSE)    ![GitHub issues](https://img.shields.io/github/issues/pzim-devdata/mpv-scripts?style=plastic)    [](https://github.com/pzim-devdata/mpv-scripts/issues)    ![GitHub repo size](https://img.shields.io/github/repo-size/pzim-devdata/mpv-scripts?style=plastic)    [![Visits Badge](https://badges.strrl.dev/visits/pzim-devdata/mpv-scripts)](https://badges.strrl.dev)    ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pzim-devdata/mpv-scripts?style=plastic)    [![GitHub commits](https://img.shields.io/github/commits-since/pzim-devdata/mpv-scripts/v0.0.1.svg?style=plastic)](https://GitHub.com/pzim-devata/mpv-scripts/commit/) 
+
+
 ## Installation
 To use this script, follow these steps:
 
