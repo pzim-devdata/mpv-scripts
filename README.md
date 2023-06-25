@@ -6,7 +6,8 @@ To use this script, follow these steps:
 
 1. Locate the script directory for your operating system:
 
-| **OS** | **Location** || --- | --- |
+| **OS** | **Location** |
+| --- | --- |
 | GNU/Linux or macOS | **`~/.config/mpv/scripts/`** |
 | Windows | **`C:/Users/Username/AppData/Roaming/mpv/scripts/`** |
 
