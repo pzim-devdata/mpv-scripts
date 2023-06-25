@@ -19,13 +19,15 @@ To use this script, follow these steps:
 
 2. Download the `mpv-sub_not_forced_not_sdh.lua` file from this repository.
 
-3. Place the downloaded file in the script directory mentioned in step 1.
+[Download :inbox_tray:](https://github.com/pzim-devdata/volumouse/releases/latest/download/mpv-scripts.zip)
 
-4. Make it executable: `chmod +x ~/.config/mpv/scripts/mpv-sub_not_forced_not_sdh.lua`
+4. Place the downloaded file in the script directory mentioned in step 1.
 
-5. Restart MPV or reload the scripts by pressing Shift + R while the player is running.
+5. Make it executable: `chmod +x ~/.config/mpv/scripts/mpv-sub_not_forced_not_sdh.lua`
 
-6. You can modify the script to play a specific langage.
+6. Restart MPV or reload the scripts by pressing Shift + R while the player is running.
+
+7. You can modify the script to play a specific langage.
 For example, if you want the script to play English subtitles but exclude the FORCED and SDH ones, you can make the following modification to line #4:
 
 `if sub.type == "sub" and not sub.forced and (sub.title == nil or not sub.title:find("SDH")) then`
