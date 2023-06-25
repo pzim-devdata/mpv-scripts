@@ -40,7 +40,7 @@ With this script, you no longer have to manually disable forced subtitles every 
 If you have any suggestions, bug reports, or would like to contribute to this project, feel free to open an issue or submit a pull request on the GitHub repository.
 
 ## License
-This script is licensed under the [MIT License](https://github.com/pzim-devdata/mpv-sub_not_forced_not_sdh/blob/main/LICENSE).
+This script is licensed under the [MIT License](https://github.com/pzim-devdata/mpv-scripts/blob/main/LICENSE).
 
 ## Acknowledgments
 Special thanks to the MPV community for their support and the development of this script.
