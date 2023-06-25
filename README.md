@@ -13,11 +13,11 @@ To use this script, follow these steps:
 | GNU/Linux or macOS | **`~/.config/mpv/scripts/`** |
 | Windows | **`C:/Users/Username/AppData/Roaming/mpv/scripts/`** |
 
-2. Download the `mpv-sub_not_forced_not_sdh` file from this repository.
+2. Download the `mpv-sub_not_forced_not_sdh.lua` file from this repository.
 
 3. Place the downloaded file in the script directory mentioned in step 1.
 
-4. Make it executable: `chmod +x ~/.config/mpv/scripts/mpv-sub_not_forced_not_sdh`
+4. Make it executable: `chmod +x ~/.config/mpv/scripts/mpv-sub_not_forced_not_sdh.lua`
 
 5. Restart MPV or reload the scripts by pressing Shift + R while the player is running.
 
