@@ -19,7 +19,7 @@ To use this script, follow these steps:
 
 2. Download the `mpv-sub_not_forced_not_sdh.lua` file from this repository.
 
-[Download :inbox_tray:](https://github.com/pzim-devdata/volumouse/releases/latest/download/mpv-scripts.zip)
+[Download :inbox_tray:](https://github.com/pzim-devdata/mpv-scripts/releases/latest/download/mpv-scripts.zip)
 
 4. Place the downloaded file in the script directory mentioned in step 1.
 
