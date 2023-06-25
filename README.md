@@ -1,5 +1,5 @@
 # mpv-sub_not_forced
-This is a LUA script for MPV that automatically prevents the selection of forced subtitles at the start.
+This is a LUA script for MPV that automatically prevents the selection of FORCED subtitles at the start.
 
 ## Installation
 To use this script, follow these steps:
@@ -15,7 +15,9 @@ To use this script, follow these steps:
 
 3. Place the downloaded file in the script directory mentioned in step 1.
 
-4. Restart MPV or reload the scripts by pressing Shift + R while the player is running.
+4. Make it executable: `chmod +x ~/.config/mpv/scripts/mpv-sub_not_forced.lua`
+
+5. Restart MPV or reload the scripts by pressing Shift + R while the player is running.
 
 ## Usage
 Once the script is installed, it will automatically prevent the selection of forced subtitles when you start playing a video with MPV. Forced subtitles are subtitles that are displayed only for sections of the video that contain non-dialogue elements such as signs, captions, or foreign language translations.
