@@ -28,7 +28,8 @@ To use this script, follow these steps:
 6. Restart MPV or reload the scripts by pressing Shift + R while the player is running.
 
 7. You can modify the script to play a specific langage.
-For example, if you want the script to play English subtitles but exclude the FORCED and SDH ones, you can make the following modification to line #4:
+
+- For example, if you want the script to play English subtitles but exclude the FORCED and SDH ones, you can make the following modification to line #4:
 
 `if sub.type == "sub" and not sub.forced and (sub.title == nil or not sub.title:find("SDH")) then`
 
@@ -37,6 +38,28 @@ Replace it with:
 `if sub.type == "sub" and sub.lang:find("en") and not sub.forced and (sub.title == nil or not sub.title:find("SDH")) then`
 
 By adding the additional condition sub.lang:find("en"), you are checking if the subtitle language matches "en" (for English). This modification ensures that only English subtitles that are not FORCED and do not contain "SDH" in their title will be selected.
+
+- For example, if you want the LUA script to not play English subtitles when selected audio is set to English :
+
+Add at the end of the LUA script:
+
+`
+function disableSubtitles()
+    mp.set_property("sub-visibility", "no")
+end
+
+function checkTitleChange(name, value)
+    local audioLanguage = mp.get_property("audio-language")
+    if value ~= nil then
+        local audioLanguage = mp.get_property("audio-language")
+        if audioLanguage:lower():find("en")) then
+            mp.register_event("playback-restart", disableSubtitles)
+        end
+    end
+end
+
+mp.observe_property("media-title", "string", checkTitleChange)
+`
 
 Please make sure to understand the consequences of this modification and adjust it according to your specific needs.
 
