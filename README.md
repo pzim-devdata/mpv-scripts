@@ -43,7 +43,7 @@ By adding the additional condition sub.lang:find("en"), you are checking if the 
 
 Add at the end of the LUA script:
 
-`
+```
 function disableSubtitles()
     mp.set_property("sub-visibility", "no")
 end
@@ -59,7 +59,7 @@ function checkTitleChange(name, value)
 end
 
 mp.observe_property("media-title", "string", checkTitleChange)
-`
+```
 
 Please make sure to understand the consequences of this modification and adjust it according to your specific needs.
 
