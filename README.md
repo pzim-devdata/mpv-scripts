@@ -31,11 +31,11 @@ To use this script, follow these steps:
 
 - For example, if you want the script to play English subtitles but exclude the FORCED and SDH ones, you can make the following modification to line #4:
 
-`if sub.type == "sub" and not sub.forced and (sub.title == nil or not sub.title:find("SDH")) then`
+`if sub.type == "sub" and not sub.forced and (sub.title == nil or not sub.title:find("SDH") and not string.lower(sub.title):find("force"))`
 
 Replace it with:
 
-`if sub.type == "sub" and sub.lang:find("en") and not sub.forced and (sub.title == nil or not sub.title:find("SDH")) then`
+`if sub.type == "sub" and sub.lang:find("en") and not sub.forced and (sub.title == nil or not sub.title:find("SDH") and not string.lower(sub.title):find("force"))`
 
 By adding the additional condition sub.lang:find("en"), you are checking if the subtitle language matches "en" (for English). This modification ensures that only English subtitles that are not FORCED and do not contain "SDH" in their title will be selected.
 
