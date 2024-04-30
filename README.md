@@ -52,11 +52,8 @@ end
 
 function checkTitleChange(name, value)
     local audioLanguage = mp.get_property("audio-language")
-    if value ~= nil then
-        local audioLanguage = mp.get_property("audio-language")
-        if audioLanguage:lower():find("en")) then
+    if value ~= nil and (audioLanguage and audioLanguage:lower():find("fr")) then
             mp.register_event("playback-restart", disableSubtitles)
-        end
     end
 end
 
